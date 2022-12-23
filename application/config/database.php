@@ -6,15 +6,15 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'port'=>25060,
-	'hostname' => 'db-mysql-sgp1-12709-do-user-12232967-0.b.db.ondigitalocean.com',
+	// 'port'=>25060,
+	'hostname' => 'db-mysql-sgp1-12709-do-user-12232967-0.b.db.ondigitalocean.com:25060',
 	'username' => 'doadmin',
 	'password' => 'AVNS_VD2DSeDufXiFeiUsqnL',
 	'database' => 'hyd_dmr',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
+	'db_debug' => FALSE,
 	'cache_on' => FALSE,
 	'cachedir' => '',
 	'char_set' => 'utf8',
