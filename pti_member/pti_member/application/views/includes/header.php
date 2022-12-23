@@ -1,4 +1,4 @@
-<?phpd efined('BASEPATH') OR exit('No direct script access allowed');?>
+<?php defined('BASEPATH') OR exit('No direct script access allowed');?>
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
