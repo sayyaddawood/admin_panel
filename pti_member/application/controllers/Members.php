@@ -12,7 +12,10 @@ class Members extends CI_Controller {
 
 	public function index()
 	{	    
-	    $data['MembersRecord']  = $this->Members_model->GetAllMembers();  
+	    $data['MembersRecord']  = $this->Members_model->GetAllMembers();
+	    
+	  //  echo '<pre>'; print_r($data['MembersRecord']);
+	   /// die;
 	    $this->load->view('members',$data);
 	}
 }

@@ -70,14 +70,16 @@
                       >
                       <div class="col-sm-9">
                        <div class="form-group row">
-                      <select class="select2 form-select shadow-none"
+                      <!--<select class="select2 form-select shadow-none"
                         style="width: 100%; height: 36px"
                       >
 			  <option>Select</option>  
-			   <?php foreach($MembersRecord as $row) { ?>
-                          <option value="<?php echo $row["id"]; ?>"><?php echo $row["name"].' '.$row["cnic"]; ?></option>
-			  <?php } ?>
-                      </select>
+			   <?php //foreach($MembersRecord as $row) { ?>
+                          <option value="<?php // echo $row["id"]; ?>"><?php // echo $row["name"].' '.$row["cnic"]; ?></option>
+			  <?php // } ?>
+                      </select>-->
+			   
+		    <input style="width:100%;" type="text" class="form-control" name="BrandName" id="MemberCNIC" autocomplete="off" placeholder="Search By CNIC">
                     
                   </div>
                       </div>
@@ -97,6 +99,29 @@
             </div>
           </div>
 	  <script>
+	    $(function(){
+
+		    $("#MemberCNIC").on("keyup",function () {   
+		      //var  txtid      = ($(this).attr('id'));
+		      var txtvalue   = $(this).val();
+		      $(this).autocomplete({
+			source: function(request, response)   {
+			$.ajax({
+			      url: "<?php echo site_url('MemberCards/AutoCompleteSearch_Member')?>",
+			      data: { MemberCNIC:txtvalue},
+			      dataType: "json",
+			      type: "POST",
+			      success: function(data) {
+			      response(data);
+			      }
+			  });
+		       },
+			  minLength: 2
+		      });
+		  });
+	    });
+	   </script>
+	  <script>
 
 	    $(function(){
 	     $("body").on("click","#generate_report",function(){
@@ -104,7 +129,7 @@
 	       var MemberId = 1; //$("#PINo").text();
 	    //   alert('MemberId');
 	       
-	       window.open("<?php //echo site_url(); ?>MemberCards/PrintMemberCards?MemberId="+MemberId,"","width=1100,height=450,left=150,top=200,toolbar=0,status=0,");
+	       window.open("<?php echo site_url(); ?>MemberCards/PrintMemberCards?MemberId="+MemberId,"","width=1100,height=450,left=150,top=200,toolbar=0,status=0,");
 	       });
 	     });
 	 </script>

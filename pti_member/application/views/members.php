@@ -1,3 +1,4 @@
+<?php //echo '<pre>'; print_r($MembersRecord); die; ?>
 <?php $this->load->view('includes/header');?>
 
   <body>

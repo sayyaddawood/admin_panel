@@ -21,7 +21,7 @@
 				?>
 				<td style="width: 236px; height: 220px; padding-top: 12px; border: 1px solid; vertical-align: top;">
 				
-				<table class="table" style="width: 92%; border: 0px solid;" border="0">
+				<table class="table" style="width: 88%; border: 0px solid;" border="0">
 				<tbody style="font-size:0.55em;">
 				<tr>
 				<td rowspan="9" style="text-align:left; width: 5px;">
@@ -33,10 +33,13 @@
 				</td>
 				</tr>
 				<tr>
-				 <td class="coltd2" colspan="2" style="text-align:left; font-size:13px; font-weight: 600;">Pakistan Tehreek-e-Insaf Sindh</td>
+				 <td class="coltd2" colspan="2" style="text-align:left; font-size:13px; font-weight: 600;">
+				     <span style="color: green;">Pakistan Tehreek-e-Insaf Sindh</span></td>
 				</tr>
 				<tr>
-				 <td class="coltd2" colspan="2" style="text-align:left; padding-left:55px; font-size:11px; font-weight: 600;">Membership Card</td>
+				 <td class="coltd2" colspan="2" style="text-align:left; padding-left:55px; font-size:11px; font-weight: 600;">
+				     <span style="color: red;">Membership Card</span>
+				     </td>
 				</tr>
 				<tr>
 				 <td class="coltd" style="text-align:left;">Serial #</td>
