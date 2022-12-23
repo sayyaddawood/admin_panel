@@ -3,14 +3,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $active_group = 'default';
 $query_builder = TRUE;
-$db['default']['port']=25060;
+
 $db['default'] = array(
 	'dsn'	=> '',
+	'port'=>25060,
 	'hostname' => 'db-mysql-sgp1-12709-do-user-12232967-0.b.db.ondigitalocean.com',
 	'username' => 'doadmin',
 	'password' => 'AVNS_VD2DSeDufXiFeiUsqnL',
 	'database' => 'hyd_dmr',
-	'dbdriver' => 'mysqli',
+	'dbdriver' => 'mysql',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
