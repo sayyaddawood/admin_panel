@@ -11,7 +11,7 @@ $db['default'] = array(
 	'username' => 'doadmin',
 	'password' => 'AVNS_VD2DSeDufXiFeiUsqnL',
 	'database' => 'hyd_dmr',
-	'dbdriver' => 'mysql',
+	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
